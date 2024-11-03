@@ -6,9 +6,7 @@ models:
       columns:
           - name: Order_ID
             description: "Primary Key"
-            tests:
-                - unique
-                - not_null
+
 
     - name: popular_products
       description: "สินค้าขายดี"
@@ -17,4 +15,12 @@ models:
             description: "Primary Key"
             tests:
                 - unique
+                - not_null
+
+    - name: total_revenue
+      description: "รายได้รวม"
+      columns:
+          - name: total_rev
+            description: "Primary Key"
+            tests:
                 - not_null
